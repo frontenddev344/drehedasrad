@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Figtree", sans-serif;
+}
+
+figure {
+    margin: 0;
+}
+
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+/*  */
+
+.container {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+header.header {
+    padding: 14px 0;
+    background-color: #000;
+
+}
+
+.logo img {
+    max-width: 200px;
+}
+
+.navigation div#mySidenavs ul {
+    display: flex;
+}
+
+.navigation div#mySidenavs ul li {
+    margin-left: 40px;
+}
+
+.navigation .toggle-bar {
+    display: none;
+}
+
+.navigation span.closebtn {
+    display: none;
+}
+
+.navigation div#mySidenavs ul li a {
+    display: block;
+    color: #fff;
+    padding: 0 0 4px 0;
+    font-weight: 400;
+    position: relative;
+    font-size: 18px;
+    text-transform: capitalize;
+    letter-spacing: 1.5px;
+
+
+}
+
+.navigation div#mySidenavs ul li a::after {
+    display: block;
+    content: '';
+    border-bottom: solid 2px #fff;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+}
+
+.navigation div#mySidenavs ul li a:hover:after {
+    transform: scaleX(1);
+}
+
+.page-header {
+    width: 100%;
+    z-index: 999;
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background: #fff; */
+}
+
+.is-sticky {
+    position: fixed;
+    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1);
+    padding: 16px 0;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    animation: slideDown 0.35s ease-out;
+    background-color: #644222 !important;
+    top: 0 !important;
+    opacity: 1;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+a.active {
+    color: #1D3A3B !important;
+    border-bottom: 2px solid #1D3A3B;
+
+}
+
+
+/*  */
+
+section.hero-sec {
+    padding: 50px 0;
+    background: url(../images/home.jfif);
+    height: 800px;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+section.hero-sec::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    opacity: .6;
+    background: #00000061;
+    z-index: -1;
+}
+
+.hero-content {
+    text-align: center;
+}
+
+.hero-content h1 {
+    color: #fff;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    color: #fff;
+    line-height: 32px;
+    font-weight: 600;
+    max-width: 900px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.item-cards {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 100%;
+    padding: 0;
+    border: 1px solid #ccc;
+    transition: all 0.4s ease;
+}
+
+/* .item-cards:hover {
+    transform: translateY(-6px);
+} */
+
+.item-cards:hover .item-cards-inner img {
+    -webkit-transform: scale(1.08);
+    transform: scale(1.08);
+}
+
+.property {
+    padding: 30px 24px 28px;
+}
+
+.property h3 {
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 10px;
+    word-break: break-word;
+    font-weight: 600;
+}
+
+.vistt-btn a {
+    font-size: 13px;
+    padding: 8px 15px 8px;
+    background-color: transparent;
+    border: 2px solid #000;
+    display: inline-block;
+    color: #000;
+    transition: all 0.4s ease;
+}
+
+.vistt-btn a:hover {
+    background: #000;
+    color: #fff;
+}
+
+.property p {
+    margin-bottom: 10px;
+}
+
+.property p span {
+    font-weight: 700;
+    margin-right: 3px;
+}
+
+.vistt-btn {
+    margin-top: 20px;
+}
+
+.item-cards-inner img {
+    height: 211px;
+    object-fit: cover;
+    -webkit-transition: 0.4s ease;
+    transition: 0.4s ease;
+}
+
+.bellagio-inner .row .col-xl-3.col-lg-4.col-md-6 {
+    margin-bottom: 30px;
+}
+
+.property p i {
+    color: #f2b600;
+    font-size: 16px;
+}
+
+.item-cards-inner figure {
+    overflow: hidden;
+}
+
+section.terms {
+    padding: 0 0 50px  0;
+}
+
+.condition_wrap h5 {
+    font-size: 26px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.condition_wrap p {
+    font-size: 18px;
+
+    line-height: 28px;
+    margin-bottom: 0;
+}
+
+.condition_wrap p {
+    padding-bottom: 20px;
+}
+
+section.privacy {
+    padding: 50px 0;
+}
+section.privacy  .hero-content h2{
+    color: #000;
+    font-size: 42px;
+}
+
+.condition_wrap ul li::before {
+    position: absolute;
+    content: "";
+    background: #000;
+    width: 8px;
+    height: 8px;
+    top: 8px;
+    left: 0;
+    border-radius: 50%;
+}
+
+.condition_wrap ul li {
+    position: relative;
+    padding-left: 20px;
+    padding-bottom: 15px;
+    font-size: 18px;
+}
+
+.hero-content h2 {
+    color: #fff;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+section.bellagio {
+    padding: 50px 0;
+}
+
+section.excitement {
+    padding-top: 50px;
+}
+
+.excitement-inner {
+    text-align: center;
+}
+
+.excitement-inner p {
+    color: #000;
+    font-size: 16px;
+    line-height: 32px;
+}
+
+section.hero-sec.events {
+    background: url(../images/Events-Vegas.jpg);
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+section.hero-sec.kniepe {
+    background: url(../images/Pub.jpg);
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* footer css  start */
+footer.footer {
+    background-color: #000;
+    padding:50px 0 0; 
+}
+.footer-logo img {
+    max-width: 200px;
+}
+.footer-logo p {
+    color: #fff;
+    max-width: 300px;
+    margin-top: 20px;
+    font-size: 18px;
+}
+.footer-menu h3,.social h3 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+.footer-menu ul li a {
+    color: #fff;
+    padding: 10px 0;
+    display: inline-block;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+.footer-menu ul li a:hover{
+    padding-left: 6px;
+}
+.social a {
+    color: #fff;
+    margin: 0 20px  0 0;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+.social a:hover{
+  transform: translateY(-6px);
+}
+.footer-bottom {
+    margin-top: 50px;
+    background: #ccc;
+    padding: 20px;
+    text-align: center;
+}
+.footer-bottom p{
+    text-transform: capitalize;
+    font-size: 18px;
+}

@@ -401,3 +401,9 @@ footer.footer {
     text-transform: capitalize;
     font-size: 18px;
 }
+.footer-logo a {
+    color: #ffff;
+    margin-top: 20px;
+    display: block;
+    font-size: 18px;
+}

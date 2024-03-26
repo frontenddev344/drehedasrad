@@ -319,12 +319,9 @@ section.privacy  .hero-content h2{
     margin-bottom: 20px;
 }
 
-section.bellagio {
-    padding: 50px 0;
-}
 
 section.excitement {
-    padding-top: 50px;
+    padding: 50px 0;
 }
 
 .excitement-inner {
@@ -357,6 +354,7 @@ section.hero-sec.kniepe {
 footer.footer {
     background-color: #000;
     padding:50px 0 0; 
+    margin-top: 30px;
 }
 .footer-logo img {
     max-width: 200px;

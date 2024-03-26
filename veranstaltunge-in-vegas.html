@@ -300,8 +300,81 @@
     </section>
 
 
-    
+    <div class="main-area-faqs">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="accordion-wrapper">
+                        <button class="accordion main-acc one dr">Was sind die beliebtesten Veranstaltungen in Las
+                            Vegas?
+                        </button>
+                        <div class="panel main-panel">
+                            <p>In Las Vegas finden zahlreiche Veranstaltungen statt, darunter Konzerte, Shows,
+                                Sportveranstaltungen, Konferenzen und Festivals. Zu den beliebten Veranstaltungen
+                                gehören CES (Consumer Electronics Show), EDC (Electric Daisy Carnival), UFC-Kämpfe und
+                                Residenzshows berühmter Künstler.
+                            </p>
+                        </div>
+                        <button class="accordion main-acc one">Wie kann ich mich über bevorstehende Veranstaltungen in
+                            Las Vegas informieren?
+                        </button>
+                        <div class="panel main-panel">
+                            <p>Sie können offizielle Veranstaltungskalender auf Websites wie Vegas.com, Ticketmaster
+                                oder den Websites bestimmter Veranstaltungsorte und Veranstaltungsorganisatoren
+                                überprüfen. Auch lokale Nachrichtenagenturen und Social-Media-Seiten informieren über
+                                bevorstehende Veranstaltungen.
+                            </p>
+                        </div>
 
+                        <button class="accordion main-acc one">Gibt es Altersbeschränkungen für Veranstaltungen in Las
+                            Vegas?
+                        </button>
+                        <div class="panel main-panel">
+                            <p>Die Altersbeschränkungen variieren je nach Veranstaltung und Veranstaltungsort. Viele
+                                Konzerte und Shows sind für alle Altersgruppen zugänglich, während für einige
+                                Veranstaltungen, wie Nachtclubs und bestimmte Aufführungen, möglicherweise
+                                Altersbeschränkungen gelten und die Teilnehmer mindestens 21 Jahre alt sein müssen.
+                            </p>
+                        </div>
+                        <button class="accordion main-acc one"> Kann ich Tickets für Veranstaltungen im Vorverkauf
+                            kaufen?
+                        </button>
+                        <div class="panel main-panel">
+                            <p>Ja, es wird empfohlen, Tickets im Voraus zu kaufen, insbesondere für beliebte
+                                Veranstaltungen oder Shows mit begrenzten Sitzplätzen. Sie können Tickets online über
+                                offizielle Ticket-Websites, an der Abendkasse des Veranstaltungsortes oder über
+                                autorisierte Ticketverkäufer kaufen.
+
+                            </p>
+                        </div>
+                        <button class="accordion main-acc one">Was soll ich zu Veranstaltungen in Las Vegas anziehen?
+                        </button>
+                        <div class="panel main-panel">
+                            <p>Die Kleiderordnung kann je nach Veranstaltungsart und Veranstaltungsort variieren. Für
+                                formelle Anlässe wie Galas oder gehobene Shows ist Cocktailkleidung oder formelle
+                                Kleidung angemessen. Bei Gelegenheitsveranstaltungen und Konzerten ist in der Regel
+                                bequeme Kleidung erlaubt, es ist jedoch am besten, sich vorher über etwaige spezifische
+                                Anforderungen an die Kleiderordnung zu informieren.
+                            </p>
+                        </div>
+                        <button class="accordion main-acc one">Ist ein Transport zu und von Veranstaltungen in Las Vegas
+                            verfügbar?
+
+                        </button>
+                        <div class="panel main-panel">
+                            <p>Las Vegas bietet verschiedene Transportmöglichkeiten, darunter Taxis, Mitfahrdienste wie
+                                Uber und Lyft, öffentliche Busse und Hotel-Shuttles. Einige Veranstaltungsorte bieten
+                                auch einen Shuttleservice für bestimmte Veranstaltungen an. Planen Sie Ihren Transport
+                                im Voraus, insbesondere für Veranstaltungen bis spät in die Nacht oder wenn Sie mehrere
+                                Veranstaltungsorte besuchen
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
@@ -362,6 +435,28 @@
     <!-- ----------------------------------------------- -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/custom.js"></script>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var parent = this.parentElement;
+                var panel = this.nextElementSibling;
+                var mainPanel = document.querySelector(".main-panel");
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                    // panel.style.border = "none";
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + 100 + "px";
+                    parent.style.maxHeight =
+                        parseInt(parent.style.maxHeight) + panel.scrollHeight + 100 + "px";
+                }
+            });
+        }
+
+    </script>
 
 
 </body>

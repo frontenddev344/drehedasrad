@@ -632,6 +632,7 @@ section.choose-sec {
 
 .inner-choose {
     padding: 20px;
+    text-align: left;
 }
 
 .inner-choose h3 {
@@ -659,4 +660,7 @@ section.choose-sec {
     color: #000;
     font-size: 16px;
     margin-bottom: 10px;
+}
+section.austrian {
+    margin-bottom: 60px;
 }

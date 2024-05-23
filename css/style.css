@@ -664,3 +664,9 @@ section.choose-sec {
 section.austrian {
     margin-bottom: 60px;
 }
+.austrian h3 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 40px;
+    font-weight: 600;
+}

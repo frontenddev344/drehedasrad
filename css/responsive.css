@@ -2,6 +2,9 @@
     section.hero-sec {
         height: 500px;
     }
+    .navigation div#mySidenavs ul li a {
+        font-size: 16px;
+       }
 }
 
 @media only screen and (max-width: 991px) {

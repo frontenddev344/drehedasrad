@@ -31,6 +31,7 @@
     .toggle-bar {
         display: block !important;
         color: #fff;
+        font-size: 30px;
     }
 
     span.closebtn {
@@ -57,24 +58,33 @@
         color: #fff;
     }
 
+    .img-inner-page {
+        margin-bottom: 20px;
+    }
 
+    .stressig.one .row {
+        flex-direction: column-reverse;
+    }
 }
 
 @media only screen and (max-width: 767px) {
     .hero-content h1 {
         font-size: 40px;
     }
+
     .footer-logo {
         margin-bottom: 20px;
     }
+
     .hero-content p {
         font-size: 16px;
         line-height: 28px;
 
     }
 }
+
 @media only screen and (max-width: 575px) {
-    section.privacy .hero-content h2{
+    section.privacy .hero-content h2 {
         font-size: 28px;
     }
 }

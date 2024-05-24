@@ -675,3 +675,12 @@ section.austrian {
     font-size: 40px;
     font-weight: 600;
 }
+
+
+section.hero-sec.gidsen {
+    background: url(../images/music.jpg);
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}

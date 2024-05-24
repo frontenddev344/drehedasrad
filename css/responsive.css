@@ -6,6 +6,9 @@
     .navigation div#mySidenavs ul li a {
         font-size: 14px;
     }
+    .navigation div#mySidenavs ul li {
+        margin-left: 30px;
+    }
 }
 
 @media only screen and (max-width: 991px) {

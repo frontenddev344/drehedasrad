@@ -678,9 +678,52 @@ section.austrian {
 
 
 section.hero-sec.gidsen {
-    background: url(../images/music.jpg);
+    background: url(../images/gides.jpg);
     height: 500px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom;
+    background-position: center;
+}
+
+.excitement-inner.opps h4 {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.excitement-inner.opps p {
+    font-size: 16px;
+    margin-bottom: 14px;
+    text-align: left;
+}
+.excitement-inner.opps p a{
+    color: #000;
+}
+.excitement-inner.opps h5 {
+    font-size: 24px;
+    text-align: left;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #000;
+}
+
+.excitement-inner.opps ul {
+    text-align: left;
+}
+
+.excitement-inner.opps ul li {
+    position: relative;
+    padding: 0 0 14px 20px;
+}
+
+.excitement-inner.opps ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 10px;
+    height: 10px;
+    background: #000;
+    border-radius: 50%;
 }

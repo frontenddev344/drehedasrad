@@ -2,9 +2,10 @@
     section.hero-sec {
         height: 500px;
     }
+
     .navigation div#mySidenavs ul li a {
         font-size: 16px;
-       }
+    }
 }
 
 @media only screen and (max-width: 991px) {
@@ -68,6 +69,7 @@
     .stressig.one .row {
         flex-direction: column-reverse;
     }
+
     .build-wrapper .row {
         justify-content: center;
     }
@@ -87,6 +89,10 @@
         font-size: 16px;
         line-height: 28px;
 
+    }
+
+    .hero-content h2 {
+        font-size: 46px;
     }
 }
 

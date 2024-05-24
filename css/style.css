@@ -195,6 +195,7 @@ section.hero-sec::after {
     padding: 0;
     border: 1px solid #ccc;
     transition: all 0.4s ease;
+    position: relative;
 }
 
 /* .item-cards:hover {
@@ -207,7 +208,7 @@ section.hero-sec::after {
 }
 
 .property {
-    padding: 30px 24px 28px;
+    padding: 30px 24px 78px;
 }
 
 .property h3 {
@@ -244,6 +245,8 @@ section.hero-sec::after {
 
 .vistt-btn {
     margin-top: 20px;
+    position: absolute;
+    bottom: 15px;
 }
 
 .item-cards-inner img {
@@ -336,11 +339,11 @@ section.excitement {
 }
 
 section.hero-sec.events {
-    background: url(../images/Events-Vegas.jpg);
+    background: url(../images/music.jpg);
     height: 500px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
 }
 
 section.hero-sec.kniepe {
@@ -560,7 +563,7 @@ button.accordion.main-acc.one {
 }
 
 section.hero-sec.casinos {
-    background: url(../images/home.jfif);
+    background: url(../images/casinos.jpg);
     height: 500px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -661,9 +664,11 @@ section.choose-sec {
     font-size: 16px;
     margin-bottom: 10px;
 }
+
 section.austrian {
     margin-bottom: 60px;
 }
+
 .austrian h3 {
     text-align: center;
     margin-bottom: 50px;

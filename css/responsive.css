@@ -68,7 +68,11 @@
     .stressig.one .row {
         flex-direction: column-reverse;
     }
+    .build-wrapper .row {
+        justify-content: center;
+    }
 }
+
 
 @media only screen and (max-width: 767px) {
     .hero-content h1 {
